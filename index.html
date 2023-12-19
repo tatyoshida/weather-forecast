@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado del tiempo</title>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input type="search" placeholder="El tiempo en..." required />
+          <input type="submit" value="Buscar" />
+        </form>
+      </header>
+      <main>
+        <h1>Montevideo</h1>
+        <h3>Lunes 22:42</h3>
+        <div class="current-data">
+          <div class="condition">
+            <div>⛈</div>
+            <div>tormenta</div>
+          </div>
+          <div class="temperature">
+            <div class="temperature-value">17</div>
+            <div class="temperature-unit">°C</div>
+          </div>
+          <div class="details">
+            <ul>
+              <li>sensación térmica</li>
+              <li>humedad</li>
+              <li>viento</li>
+              <li>presión atm</li>
+            </ul>
+          </div>
+        </div>
+        <p>Pronóstico semanal</p>
+        <div class="weather-forecast">
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Mar</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature"><strong>10°</strong></div>
+              <div class="weather-forecast-temperature">8°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Mie</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature"><strong>10°</strong></div>
+              <div class="weather-forecast-temperature">4°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Jue</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature"><strong>14°</strong></div>
+              <div class="weather-forecast-temperature">6°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Vie</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature"><strong>18°</strong></div>
+              <div class="weather-forecast-temperature">7°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Sab</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature"><strong>10°</strong></div>
+              <div class="weather-forecast-temperature">6°</div>
+            </div>
+          </div>      
+        </div>
+      </main>
+      <footer>
+        This project was codes by
+        <a href="#" target="_blank">Tatyoshida</a> , is 
+        <a href="#" target="_blank">open-sorced on GitHub</a> and
+        <a href="#" target="_blank">hosted on Netlify</a>.
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
