@@ -1,12 +1,13 @@
 body {
   background: #28292D;
+  font-family: 'Roboto', sans-serif;
 }
 
 .weather-app {
   background: #252628;
   color: #F7F7F9;
   max-width: 600px;
-  margin: 60px auto;
+  margin: 18px auto;
   box-shadow: 0 10px 30px #535151;
   border-radius: 30px;
   padding: 30px 40px;
@@ -29,4 +30,39 @@ body {
   font-size: 16px;
   padding: 15px 30px;
   margin-left: 3px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 500;
+  margin: 0;
+  padding: 36px 0 0;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+  padding: 12px 0;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-around;
+}
+
+.weather-description {
+  font-weight: 300;
+  padding: 20px 0;
+}
+.current-temperature {
+  padding: 60px 0;
+}
+.current-temperature-value {
+  font-size: 48px;
+  font-weight: 500;
+}
+.temperature-unit {
+  font-size: 28px;
 }
