@@ -1,0 +1,32 @@
+body {
+  background: #28292D;
+}
+
+.weather-app {
+  background: #252628;
+  color: #F7F7F9;
+  max-width: 600px;
+  margin: 60px auto;
+  box-shadow: 0 10px 30px #535151;
+  border-radius: 30px;
+  padding: 30px 40px;
+}
+
+.search-input {
+  background: #e0dce9;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 15px 20px;
+  width: 80%;
+}
+
+.search-button {
+  background: #7B30C0;
+  color: #F7F7F9;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 15px 30px;
+  margin-left: 3px;
+}

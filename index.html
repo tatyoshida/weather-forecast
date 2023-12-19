@@ -11,23 +11,23 @@
     <div class="weather-app">
       <header>
         <form>
-          <input type="search" placeholder="El tiempo en..." required />
-          <input type="submit" value="Buscar" />
+          <input type="search" placeholder="Enter a city..." required class="search-input"/>
+          <input type="submit" value="Search" class="search-button"/>
         </form>
       </header>
       <main>
         <h1>Montevideo</h1>
         <h3>Lunes 22:42</h3>
-        <div class="current-data">
-          <div class="condition">
-            <div>⛈</div>
-            <div>tormenta</div>
+        <div class="current-weather">
+          <div class="weather-description">
+            <div class="icon">⛈</div>
+            <div class="text-description">tormenta</div>
           </div>
-          <div class="temperature">
-            <div class="temperature-value">17</div>
+          <div class="current-temperature">
+            <div class="current-temperature-value">17</div>
             <div class="temperature-unit">°C</div>
           </div>
-          <div class="details">
+          <div class="weather-details">
             <ul>
               <li>sensación térmica</li>
               <li>humedad</li>
@@ -77,7 +77,7 @@
       </main>
       <footer>
         This project was codes by
-        <a href="#" target="_blank">Tatyoshida</a> , is 
+        <a href="https://github.com/tatyoshida" target="_blank"><em>Tatyoshida</em></a> , is 
         <a href="#" target="_blank">open-sorced on GitHub</a> and
         <a href="#" target="_blank">hosted on Netlify</a>.
       </footer>
