@@ -54,10 +54,12 @@ h3 {
 
 .weather-description {
   font-weight: 300;
+  width: 100px;
   padding: 20px 0;
 }
 .current-temperature {
   padding: 60px 0;
+  width: 100px;
 }
 .current-temperature-value {
   font-size: 48px;
@@ -65,4 +67,29 @@ h3 {
 }
 .temperature-unit {
   font-size: 28px;
+}
+.weather-details {
+  width: 100px;
+  padding: 10px 0;
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+
+
+
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+}
+footer {
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+}
+a {
+  color: #7B30C0;
 }
