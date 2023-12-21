@@ -47,30 +47,26 @@ h3 {
 }
 .weather-description {
   font-weight: 300;
-  width: 100px;
+  max-width: 100px;
   padding: 20px 0;
 }
 .current-temperature {
   padding: 60px 0;
-  width: 100px;
 }
 .current-temperature-value {
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 500;
 }
 .temperature-unit {
-  font-size: 28px;
+  font-size: 30px;
 }
 .weather-details {
-  width: 100px;
-  padding: 10px 0;
+  padding: 24px 0 0;
 }
-ul {
-  list-style: none;
-  padding-left: 0px;
-}
-hr {
-  color: #e0dce9;
+.humidity,
+.wind,
+.pressure {
+  padding-bottom: 18px;
 }
 .weather-forecast {
   display: flex;

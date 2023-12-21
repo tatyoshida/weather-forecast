@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,40 +18,37 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required class="search-input"/>
+        <form id="search-form">
+          <input type="search" placeholder="Enter a city..." required class="search-input" id="search-input"/>
           <input type="submit" value="Search" class="search-button"/>
         </form>
       </header>
       <main>
-        <h1>Montevideo</h1>
-        <h3>Lunes 22:42</h3>
+        <h1 id="current-city">Montevideo</h1>
+        <h3 id="time">Lunes 22:42</h3>
         <div class="current-weather">
           <div class="weather-description">
-            <div class="icon">
-              <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
-                class="weather-icon">
+            <div class="icon" id="icon">
             </div>
-            <span class="text-description">broken clouds</span>
+            <span class="text-description" id="description"></span>
           </div>
           <div class="current-temperature">
-            <span class="current-temperature-value">17°</span>
+            <span class="current-temperature-value" id="current-temperature-value"></span>
             <span class="temperature-unit">C</span>
           </div>
           <div class="weather-details">
-            <ul>
-              <li>
-                <span class="material-symbols-outlined">humidity_low</span> 63%
-              </li>
-              <br />
-              <li>
-                <span class="material-symbols-outlined">air</span> 7 Km/h
-              </li>
-              <br />
-              <li>
-                <span class="material-symbols-outlined">collapse_all</span> 1020 mb
-              </li>
-            </ul>
+            <div class="humidity">
+              <span class="material-symbols-outlined">humidity_low</span>
+              <span id="humidity"></span>
+            </div>
+            <div class="wind">
+              <span class="material-symbols-outlined">air</span>
+              <span id="wind-speed"></span>
+            </div>
+            <div class="pressure">
+              <span class="material-symbols-outlined">collapse_all</span>
+              <span id="pressure"></span>
+            </div>
           </div>
         </div>
         <hr />
