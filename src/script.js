@@ -21,6 +21,8 @@ function displayWeather(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed} Km/h`;
   pressureElement.innerHTML = `${response.data.temperature.pressure} mb`;
+
+  getForecast(response.data.city);
 }
 function searchCity(city) {
   let apiKey = "ofa9b4df40ba3b4e1688atf2bb780ddd";
@@ -58,7 +60,15 @@ function formatDate(date) {
   return `${formatDay} ${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "ofa9b4df40ba3b4e1688atf2bb780ddd";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&unit=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -83,4 +93,3 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchSubmit);
 
 searchCity("Montevideo");
-displayForecast();
