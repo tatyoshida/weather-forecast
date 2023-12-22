@@ -36,8 +36,6 @@ function formatDate(date) {
     hours = `0${hours}`;
   }
 
-  let day = date.getDay();
-
   let days = [
     "Sunday",
     "Monday",
@@ -47,8 +45,8 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
-  let formatDay = days[day];
-  return `${formatDay} ${hours}:${minutes}`;
+  let day = days[date.getDay()];
+  return `${day} ${hours}:${minutes}`;
 }
 
 function searchCity(city) {
